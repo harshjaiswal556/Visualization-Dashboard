@@ -51,25 +51,7 @@ const Filters = ({ setMainData }) => {
                 </Dropdown.Menu>
             </Dropdown>
 
-            {/* <Button variant="dark" onClick={handleReset} style={{ marginLeft: '1vw', width: '10rem' }}>Reset Filters</Button> */}
-            <Dropdown onSelect={handleSelect}>
-
-                <Dropdown.Toggle variant="transparent" id="dropdown-basic">
-                    Filter By Year
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item eventKey="1" >2014</Dropdown.Item>
-                    <Dropdown.Item eventKey="2" >2015</Dropdown.Item>
-                    <Dropdown.Item eventKey="3" >2016</Dropdown.Item>
-                    <Dropdown.Item eventKey="4" >2017</Dropdown.Item>
-                    <Dropdown.Item eventKey="5" >2018</Dropdown.Item>
-                    <Dropdown.Item eventKey="6" >2019</Dropdown.Item>
-                    <Dropdown.Item eventKey="7" >2020</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-
-            <Button variant="dark" onClick={handleReset} style={{ marginLeft: '1vw', width: '10rem' }}>Reset Filters</Button>
+            <Button variant="primary" onClick={handleReset} style={{ marginLeft: '1vw', width: '10rem' }}>Reset Filters</Button>
         </div>
     )
 }
